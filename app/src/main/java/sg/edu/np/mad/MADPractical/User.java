@@ -6,14 +6,11 @@ public class User {
     int Id;
     boolean Followed;
 
-    private User(){
-        this.Name = "Griffin";
-        this.Description = "Year 2";
-        this.Id = 0;
-        this.Followed = true;
+    public User(){
+
     }
 
-    private User(String n, String des, int ID, boolean f){
+    public User(String n, String des, int ID, boolean f){
         Name = n;
         Description = des;
         Id = ID;
