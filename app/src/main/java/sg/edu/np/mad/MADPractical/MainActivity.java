@@ -22,20 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
         TextView description = findViewById(R.id.description);
         description.setText(newUser.Description);
-
-        followCheck();
-        Button follow = findViewById(R.id.followButton);
-        follow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                followCheck();
-            }
-        });
     }
 
-    public void followCheck(){
+    public void followCheck(View view){
         Button follow = findViewById(R.id.followButton);
-        if (newUser.Followed){
+        if (newUser.Followed == true){
             follow.setText("Follow");
             newUser.Followed = false;
         }
